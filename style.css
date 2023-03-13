@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* ---------------- VARIABLES IN HTML ----------------------- */
+:root {
+  --white: #ffffff;
+  --grey: #B8AFAF;
+  --black: rgb(20, 19, 19);
+  --yellow:#F6DB2B;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "OpenSans", sans-serif;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* ----------------------- IMAGES AND MORE --------------------------- */
+
+h1{
+    text-align: center;
+    background-color: var(--yellow);
+}
+
+h2 {
+    text-align: center;
+}
+  
+
+h3 {
+    background-color: var(--grey);
+}
+  .fadeImages {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    opacity: 0;
+  }
+  
+  .imageLoadOne {
+    transition: opacity 1000ms ease 1s;
+  }
+  
+  .imageLoadTwo {
+    transition: opacity 1000ms ease 1.2s;
+  }
+  
+  .imageLoadThree {
+    transition: opacity 1000ms ease 2s;
+  }
+  
+  .showImage {
+    opacity: 1;
+  }
+  
+  .textBox {
+    background-color:var(--yellow);
+    color: black;
+    /* max-width: 640px; */
+    text-align: center;
+  }
+
+  #myFoldOutTrigger {
+    background-color: var(--white);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .foldOutText {
+    color: rgb(1, 1, 1);
+    height: 0px;
+    overflow: hidden;
+  
+    transition: height 500ms ease;
+  }
+  
+  .showFoldOut {
+    height: 200px;
+  }
