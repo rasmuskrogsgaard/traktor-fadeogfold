@@ -56,7 +56,7 @@ h3 {
     opacity: 1;
   }
   
-  .textBox {
+  .infoBox {
     background-color:var(--yellow);
     color: black;
     /* max-width: 640px; */
