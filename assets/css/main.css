@@ -15,8 +15,13 @@ h1{
     height: 150px;
     margin: 0;
     padding: 0;
-
-
+}
+h2 {
+    text-align: center;
+}
+  
+article{
+    background-color: #F6DB2B;
 }
 
 header{
@@ -54,6 +59,32 @@ header img{
 .showImg{
     opacity: 1;
 }
+
+.infoBox {
+    background-color:var(--yellow);
+    color: black;
+    /* max-width: 640px; */
+    text-align: center;
+  }
+
+  #myFoldOutTrigger {
+    background-color: var(--white);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .foldOutText {
+    color: rgb(1, 1, 1);
+    height: 0px;
+    overflow: hidden;
+  
+    transition: height 500ms ease;
+  }
+  
+  .showFoldOut {
+    height: 200px;
+  }
 
 footer{
     background-color: #B8AFAF;
