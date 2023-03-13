@@ -22,6 +22,8 @@ h2 {
   
 article{
     background-color: #F6DB2B;
+    border-radius: 10px;
+    
 }
 
 header{
@@ -41,6 +43,7 @@ header img{
 .tractorimg{
     opacity: 0;
     justify-content: center;
+    border-radius: 0 0 10px 10px;
    
 }
 
@@ -49,11 +52,11 @@ header img{
 }
 
 .imagefadeto{
-    transition: opacity 700ms ease 2s;
+    transition: opacity 700ms ease 1.5s;
 }
 
 .imagefadetre{
-    transition: opacity 700ms ease 3s;
+    transition: opacity 700ms ease 2s;
 }
 
 .showImg{
@@ -72,12 +75,22 @@ header img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
+    padding: 5px;
   }
+#myFoldOutTrigger:hover {
+    color: #F6DB2B;
+    
+    
+}
 
   .foldOutText {
     color: rgb(1, 1, 1);
     height: 0px;
     overflow: hidden;
+   text-align: left;
+   line-height: 50px;
+   
   
     transition: height 500ms ease;
   }
@@ -88,4 +101,13 @@ header img{
 
 footer{
     background-color: #B8AFAF;
+   
 }
+
+@media only screen and (max-width: 800px) {
+    header {
+      display: flex;
+      flex-direction: column;
+     
+    }
+  }
