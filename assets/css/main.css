@@ -88,4 +88,6 @@ header img{
 
 footer{
     background-color: #B8AFAF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
