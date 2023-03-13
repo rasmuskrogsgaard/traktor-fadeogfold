@@ -1,10 +1,60 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    margin-left: 150px;
+    margin-right: 150px;
+   
+}
+
+h1{
+    text-align: center;
+    background-color: #F6DB2B;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+
+header img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.tractorimg{
+    opacity: 0;
+    justify-content: center;
+   
+}
+
+.imagefadeet{
+    transition: opacity 700ms ease 1s;
+}
+
+.imagefadeto{
+    transition: opacity 700ms ease 2s;
+}
+
+.imagefadetre{
+    transition: opacity 700ms ease 3s;
+}
+
 .showImg{
     opacity: 1;
 }
 
-.tractorimg{
-width: 250px;
-height: 250px;
-opacity: 0;
-
+footer{
+    background-color: #B8AFAF;
 }
