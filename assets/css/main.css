@@ -8,6 +8,9 @@ body{
     margin-right: 150px;
    
 }
+.fadeIn{
+    opacity: 1;
+}
 
 h1{
     text-align: center;
@@ -23,6 +26,7 @@ h2 {
 article{
     background-color: #F6DB2B;
     border-radius: 10px;
+    animation-name: fadeInRight;
     
 }
 
@@ -83,22 +87,13 @@ header img{
     
     
 }
-
-  .foldOutText {
-    color: rgb(1, 1, 1);
-    height: 0px;
-    overflow: hidden;
-   text-align: left;
-   line-height: 50px;
-   
+#myFoldOutText{
+    opacity: 0;
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out
+}
   
-    transition: height 500ms ease;
-  }
-  
-  .showFoldOut {
-    height: 200px;
-  }
-
 footer{
     margin-top: 100px;
     background-color: #B8AFAF;
@@ -107,10 +102,28 @@ footer{
    
 }
 
+
+
+
 @media only screen and (max-width: 800px) {
     header {
       display: flex;
       flex-direction: column;
      
+    }
+  }
+
+
+
+  /* keyframes */
+
+
+  @keyframes fadeInRight {
+    from{
+        opacity: 0;
+        transform: translate(300px);
+    }
+    to{
+        opacity: 1;
     }
   }
