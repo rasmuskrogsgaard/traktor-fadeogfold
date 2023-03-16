@@ -29,11 +29,76 @@ h2 {
     animation-timing-function: ease-in;
 }
 
+.goodatBox{
+    transition: opacity 700ms ease 1s;
+}
+
+#myText{
+    background-color: #F6DB2B;
+    margin: 10px;
+    text-align: center;
+}
+
+fieldset{
+    background-color: #B8AFAF;
+}
+
+
+
 article {
     background-color: #F6DB2B;
     border-radius: 10px;
 
 }
+
+legend{
+    color: black;
+    font-weight: bold;
+}
+
+.mySubmit{
+    background-color: #14A736;
+    color: black;
+    display: block;
+    margin-top: 5px;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: #14A736;
+}
+
+.mySubmit:hover{
+    background-color: #03d434;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* .animateShake{
+
+    animation-name: shake;
+  } */
+
+  input:invalid {
+    animation: shake 0.2s ease-in-out 0s 2;
+  }
+
+  @keyframes shake{
+
+    0% {
+        margin-left: 0rem;
+      }
+      25% {
+        margin-left: 0.5rem;
+      }
+      75% {
+        margin-left: -0.5rem;
+      }
+      100% {
+        margin-left: 0rem;
+}
+  }
+
+
 
 header {
     display: grid;

@@ -8,6 +8,10 @@ for (const myElement of fadingImg) {
 });
 
 
+
+// foldOut
+
+
 //fadeIn bottom
 let myTrigger = document.getElementById('myFoldOutTrigger');
 let myTriggerElement = document.getElementById('myFoldOutText');
