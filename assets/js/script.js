@@ -7,6 +7,11 @@ for (const myElement of fadingImg) {
 }
 });
 
+//goodatSection
+
+
+
+
 // foldOut
 
 myFoldOutTrigger.addEventListener('click', () => {

@@ -20,6 +20,10 @@ h2 {
     text-align: center;
 }
 
+.goodatBox{
+    transition: opacity 700ms ease 1s;
+}
+
 #myText{
     background-color: #F6DB2B;
     margin: 10px;
