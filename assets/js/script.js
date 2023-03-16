@@ -12,6 +12,15 @@ for (const myElement of fadingImg) {
 
 
 
+//FORM 
+
+let myShake=document.getElementById('email');
+let myButton=document.getElementById('myButton');
+
+myButton.addEventListener('click',()=>{
+    myShake.classList.toggle('shake');
+    });
+
 // foldOut
 
 myFoldOutTrigger.addEventListener('click', () => {
