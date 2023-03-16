@@ -8,9 +8,6 @@ body{
     margin-right: 150px;
    
 }
-.fadeIn{
-    opacity: 1;
-}
 
 h1{
     text-align: center;
@@ -26,7 +23,7 @@ h2 {
 article{
     background-color: #F6DB2B;
     border-radius: 10px;
-    animation-name: fadeInRight;
+   
     
 }
 
@@ -81,17 +78,25 @@ header img{
     margin-right: auto;
     border-radius: 10px;
     padding: 5px;
+    border: none;
+    font-size: 20px;
   }
 #myFoldOutTrigger:hover {
     color: #F6DB2B;
+    animation-name: buttonHoverPulse;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+
     
     
 }
+#fadeIn{
+    opacity: 1;
+}
+
 #myFoldOutText{
     opacity: 0;
-    animation-name: fadeInRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out
 }
   
 footer{
@@ -101,7 +106,12 @@ footer{
     grid-template-columns: 1fr 1fr;
    
 }
-
+.animationBottom{
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
 
 
 
@@ -125,5 +135,20 @@ footer{
     }
     to{
         opacity: 1;
+    }
+  }
+
+  @keyframes buttonHoverPulse{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform:scale(1);
     }
   }

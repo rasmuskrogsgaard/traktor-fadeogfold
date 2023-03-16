@@ -14,5 +14,5 @@ let myTriggerElement = document.getElementById('myFoldOutText');
 
 
 myTrigger.addEventListener('click',()=>{
-    myTriggerElement.classList.toggle('fadeIn');
-})
+    myTriggerElement.classList.toggle('animationBottom');
+}); 
