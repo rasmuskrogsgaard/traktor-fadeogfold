@@ -1,23 +1,32 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     margin-left: 150px;
     margin-right: 150px;
-   
+
 }
 
-h1{
+h1 {
     text-align: center;
     background-color: #F6DB2B;
     height: 150px;
     margin: 0;
     padding: 0;
+
 }
+
+
+
+
 h2 {
     text-align: center;
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
 }
 
 .goodatBox{
@@ -35,8 +44,11 @@ fieldset{
 }
 
 
-article{
+
+article {
     background-color: #F6DB2B;
+    border-radius: 10px;
+
 }
 
 legend{
@@ -87,70 +99,259 @@ legend{
   }
 
 
-header{
+
+header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-   
+
 }
 
-header img{
+header img {
     height: 100%;
     width: 100%;
 }
 
 
+.minTraktor {
+    animation-name: MinTraktor;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    position: relative;
+}
 
+@keyframes MinTraktor {
+    0% {
+        opacity: 0;
+        top: -700px;
+    }
 
-.tractorimg{
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.tractorimg {
     opacity: 0;
     justify-content: center;
-   
+    border-radius: 0 0 10px 10px;
+
 }
 
-.imagefadeet{
-    transition: opacity 700ms ease 1s;
+.imagefadeet {
+    transition: 700ms ease 1s;
+    animation-name: ImagesOne;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+
 }
 
-.imagefadeto{
+@keyframes ImagesOne {
+    0% {
+        transform: scale(0%);
+
+    }
+
+    50% {
+        transform: scale(130%);
+
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
+
+.imagefadeto {
+    transition: 700ms ease 1.5s;
+    animation-name: ImagesTwo;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+
+}
+
+@keyframes ImagesTwo {
+    0% {
+        transform: scale(0%);
+
+    }
+
+    50% {
+        transform: scale(130%);
+        opacity: 0.5;
+
+    }
+
+    100% {
+        transform: scale(100%);
+        opacity: 1;
+    }
+}
+
+.imagefadetre {
     transition: opacity 700ms ease 2s;
+    animation-name: ImagesThree;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+
 }
 
-.imagefadetre{
-    transition: opacity 700ms ease 3s;
+@keyframes ImagesThree {
+    0% {
+        transform: scale(0%);
+
+    }
+
+    50% {
+        transform: scale(130%);
+
+    }
+
+    100% {
+        transform: scale(100%);
+    }
 }
 
-.showImg{
+.showImg {
     opacity: 1;
 }
 
 .infoBox {
-    background-color:var(--yellow);
+    background-color: var(--yellow);
     color: black;
     /* max-width: 640px; */
     text-align: center;
-  }
+}
 
-  #myFoldOutTrigger {
+#myFoldOutTrigger {
     background-color: var(--white);
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+    border-radius: 10px;
+    padding: 5px;
 
-  .foldOutText {
+    border: none;
+    font-size: 20px;
+  }
+#myFoldOutTrigger:hover {
+    color: #F6DB2B;
+    animation-name: buttonHoverPulse;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+
+    
+    
+
+}
+
+#myFoldOutTrigger:hover {
+    color: #F6DB2B;
+
+
+
+}
+#fadeIn{
+    opacity: 1;
+}
+
+
+#myFoldOutText{
+    opacity: 0;
+}
+  
+footer{
+=======
+.foldOutText {
     color: rgb(1, 1, 1);
     height: 0px;
     overflow: hidden;
-  
-    transition: height 500ms ease;
-  }
-  
-  .showFoldOut {
-    height: 200px;
-  }
+    text-align: left;
+    line-height: 50px;
 
-footer{
+
+    transition: height 500ms ease;
+}
+
+.showFoldOut {
+    height: 200px;
+}
+
+footer {
+
+    margin-top: 100px;
     background-color: #B8AFAF;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    animation-name: footerfade;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+   
 }
+.animationBottom{
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    header {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+  }
+
+
+
+  /* keyframes */
+
+
+  @keyframes fadeInRight {
+    from{
+        opacity: 0;
+        transform: translate(300px);
+    }
+    to{
+        opacity: 1;
+    }
+  }
+
+  @keyframes buttonHoverPulse{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform:scale(1);
+    }
+  }
+
+  @keyframes footerfade{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+  }
+  
+

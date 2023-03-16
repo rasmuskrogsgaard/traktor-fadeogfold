@@ -7,33 +7,16 @@ for (const myElement of fadingImg) {
 }
 });
 
-//goodatSection
-
-
-
-
-//FORM 
-
-
 
 
 // foldOut
 
-myFoldOutTrigger.addEventListener('click', () => {
+
+//fadeIn bottom
+let myTrigger = document.getElementById('myFoldOutTrigger');
+let myTriggerElement = document.getElementById('myFoldOutText');
 
 
-    myFoldOutText.classList.toggle('showFoldOut');
-
-
-
-    if (myFoldOutTrigger.innerText == 'Vis mindre') {
-
-        myFoldOutTrigger.innerText = 'Vis mere';
-    }
-    else {
-        myFoldOutTrigger.innerText = 'Vis mindre';
-    }
-
-
-
-});
+myTrigger.addEventListener('click',()=>{
+    myTriggerElement.classList.toggle('animationBottom');
+}); 
