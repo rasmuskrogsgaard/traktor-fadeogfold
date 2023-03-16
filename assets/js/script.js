@@ -7,23 +7,12 @@ for (const myElement of fadingImg) {
 }
 });
 
-// foldOut
 
-myFoldOutTrigger.addEventListener('click', () => {
-
-
-    myFoldOutText.classList.toggle('showFoldOut');
+//fadeIn bottom
+let myTrigger = document.getElementById('myFoldOutTrigger');
+let myTriggerElement = document.getElementById('myFoldOutText');
 
 
-
-    if (myFoldOutTrigger.innerText == 'Vis mindre') {
-
-        myFoldOutTrigger.innerText = 'Vis mere';
-    }
-    else {
-        myFoldOutTrigger.innerText = 'Vis mindre';
-    }
-
-
-
-});
+myTrigger.addEventListener('click',()=>{
+    myTriggerElement.classList.toggle('animationBottom');
+}); 
