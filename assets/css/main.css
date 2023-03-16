@@ -19,6 +19,12 @@ h1{
 h2 {
     text-align: center;
 }
+
+#myText{
+    background-color: #F6DB2B;
+    margin: 10px;
+    text-align: center;
+}
   
 article{
     background-color: #F6DB2B;
