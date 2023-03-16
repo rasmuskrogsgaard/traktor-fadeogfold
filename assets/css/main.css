@@ -18,6 +18,9 @@ h1{
 }
 h2 {
     text-align: center;
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
 }
   
 article{
@@ -104,6 +107,9 @@ footer{
     background-color: #B8AFAF;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    animation-name: footerfade;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
    
 }
 .animationBottom{
@@ -152,3 +158,14 @@ footer{
         transform:scale(1);
     }
   }
+
+  @keyframes footerfade{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+  }
+  
