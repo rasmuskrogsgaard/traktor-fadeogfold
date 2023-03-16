@@ -18,5 +18,7 @@ let myTriggerElement = document.getElementById('myFoldOutText');
 
 
 myTrigger.addEventListener('click',()=>{
+    console.log(myTriggerElement.classList);
     myTriggerElement.classList.toggle('animationBottom');
+    console.log(myTriggerElement.classList);
 }); 
