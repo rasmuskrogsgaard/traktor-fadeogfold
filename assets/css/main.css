@@ -25,9 +25,35 @@ h2 {
     margin: 10px;
     text-align: center;
 }
-  
+
+fieldset{
+    background-color: #B8AFAF;
+}
+
 article{
     background-color: #F6DB2B;
+}
+
+legend{
+    color: black;
+    font-weight: bold;
+}
+
+.mySubmit{
+    background-color: #14A736;
+    color: black;
+    display: block;
+    margin-top: 5px;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: #14A736;
+}
+
+.mySubmit:hover{
+    background-color: #03d434;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 header{
